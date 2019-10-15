@@ -1,3 +1,5 @@
+/// <reference path="player.ts" />
+
 function startGame() {
     // start a new game
     
@@ -45,3 +47,7 @@ const logMessage = (message: string) => console.log(message);
 function logError(err: string): void {
     console.log(err);
 }
+
+const firstPlayer: Player = new Player();
+firstPlayer.name = 'Lanier';
+console.log(firstPlayer.formatName());
