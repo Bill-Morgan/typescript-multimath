@@ -51,6 +51,7 @@
 
     "workbench.statusBar.visible": false,
   
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "terminal.integrated.fontFamily": "monospace"
      
   }
