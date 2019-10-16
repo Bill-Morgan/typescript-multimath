@@ -9,7 +9,7 @@ class Scoreboard {
     }
 
     updateScoreboard(): void {
-        let output: str4ing = "<h2>Scoreboard</h2>";
+        let output: string = "<h2>Scoreboard</h2>";
 
         for (let index = 0; index < this.results.length; index++) {
             const result: Result = this.results[index];
@@ -18,7 +18,7 @@ class Scoreboard {
             output += "</h4>";
         }
 
-        const scoresElement: HTMLElement = document.getElementById('score')!;
+        const scoresElement: HTMLElement = document.getElementById('scores')!;
         scoresElement.innerHTML = output;
     }
 }

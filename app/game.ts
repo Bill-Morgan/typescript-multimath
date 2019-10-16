@@ -11,7 +11,7 @@ class Game {
 
     displayGame(): void {
         let gameForm: string = '';
-        for (let i = 1; i <= this.problemCount; i+) {
+        for (let i = 1; i <= this.problemCount; i++) {
             gameForm += '<div class="form-group">';
             gameForm += '<label for="answer' + i + '" class="col-sm-2 control-label">';
             gameForm +=  String(this.factor) + ' x ' + i + ' = </label>';
@@ -42,7 +42,7 @@ class Game {
             playerName: this.player.name,
             score: score,
             problemCount: this.problemCount,
-            factor: this.factor;
+            factor: this.factor
         }
 
         this.scoreboard.addResult(result);
